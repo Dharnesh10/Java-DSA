@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Revision {
+class AllCellProblemsInGraphs {
 
     public static int maxWeightNode(int N, int[] edge) {
         long[] weight = new long[N];
