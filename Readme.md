@@ -8,5 +8,5 @@ Java Basics to Advanced theory + code:
 DSA theory + code:
 1.Recursion
 2.BackTracking
-3.Binary Trees
+3.Binary Trees, BST (DFS + BFS)
 4.Graphs
