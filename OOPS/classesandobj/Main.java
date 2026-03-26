@@ -8,6 +8,7 @@ class Main {
         System.out.println(car1.price);
 
         car1.changeName("Corolla");
+        car1.changePrice(3000000);
         System.out.println(car1.name);
 
         car1.sentence();
@@ -21,6 +22,10 @@ class Cars {
 
     void changeName(String newName) {
         this.name = newName;
+    }
+
+    void changePrice(int newPrice) {
+        this.price = newPrice;
     }
 
     void sentence() {

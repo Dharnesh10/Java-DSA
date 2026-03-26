@@ -1,0 +1,134 @@
+🧱 1. Encapsulation (Data Hiding)
+🔹 Meaning:
+
+👉 Wrapping data (variables) and methods into a single unit (class)
+👉 Restricting direct access using private
+
+🔹 Example:
+class BankAccount {
+    private int balance;
+
+    public void setBalance(int amount) {
+        balance = amount;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}
+
+👉 You can’t access balance directly, only through methods
+
+🔹 Simple Idea:
+
+👉 “Hide data and control access”
+
+
+
+
+
+
+
+
+
+
+🧱 2. Inheritance (Reusability)
+🔹 Meaning:
+
+👉 One class inherits properties from another
+
+🔹 Example:
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+👉 Dog can use eat() from Animal
+
+🔹 Simple Idea:
+
+👉 “Child gets features of parent”
+
+
+
+
+
+
+
+
+
+
+
+🧱 3. Polymorphism (Many Forms)
+🔹 Meaning:
+
+👉 Same method behaves differently based on object
+
+🔹 Example:
+class Animal {
+    void sound() {
+        System.out.println("Animal sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {
+        System.out.println("Bark");
+    }
+}
+Animal a = new Dog();
+a.sound();  // Bark
+🔹 Simple Idea:
+
+👉 “Same method, different behavior”
+
+
+
+
+
+
+
+
+
+
+
+
+
+🧱 4. Abstraction (Hiding Complexity)
+🔹 Meaning:
+
+👉 Show only important details, hide internal logic
+
+🔹 Example:
+abstract class Vehicle {
+    abstract void start();
+}
+
+class Car extends Vehicle {
+    void start() {
+        System.out.println("Car starts with key");
+    }
+}
+
+👉 User just calls start() — doesn’t care how it works
+
+🔹 Simple Idea:
+
+👉 “Hide implementation, show functionality”
+
+🔥 Final Summary Table
+Pillar	Meaning	Key Benefit
+Encapsulation	Hide data	Security
+Inheritance	Reuse code	Reusability
+Polymorphism	Many behaviors	Flexibility
+Abstraction	Hide complexity	Simplicity
+🎯 Interview One-Line Answer
+
+“The four pillars of OOP are Encapsulation, Inheritance, Polymorphism, and Abstraction, which help in building secure, reusable, flexible, and maintainable software.”

@@ -60,7 +60,7 @@ class Maze {
             path(p + 'D', r, c-1);
         }
         if(c > 1 && r > 1) {
-            path(p + 'C', r-1, c-1);
+            path(p + 'C', r-1, c-1); //C-cross(diagonaly)
         }
     }
 
