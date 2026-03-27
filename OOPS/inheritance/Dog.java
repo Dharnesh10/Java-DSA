@@ -25,10 +25,10 @@ class Dog extends Animal {
 
 Access Modifiers table:
 
-Modifier | Class | Package | Subclass | World
-public   |   Y   |   Y     |    Y     |   Y
-protected|   Y   |   Y     |    Y     |    
-default  |   Y   |   Y     |          |    
-private  |   Y   |         |          |    
+Modifier | Class | Package | Subclass(same package) | Subclass(different package) | World
+public   |   Y   |   Y     |          Y             |             Y               |   Y
+protected|   Y   |   Y     |          Y             |             Y               |   
+default  |   Y   |   Y     |          Y             |                             |   
+private  |   Y   |         |                        |                             |   
 
 (y - can be accessed)
